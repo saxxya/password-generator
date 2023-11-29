@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パスワードジェネレーター</title>
+  <link rel="stylesheet" href="css/leset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>パスワード ジェネレーター</h1>
+    <p>半角の英小文字、英大文字、数字からランダムで生成します</p>
+    <p class="worning">※推測されにくいパスワードを生成するものではありません</p>
+
+    <form name="inputs" class="inputs">
+      <p>生成するパスワードの長さを選択してください</p>
+      <div class="generateLength" id="generateLength">
+        <input type="radio" name="generateLength" value="4" checked><label for="r1">4桁</label>
+        <input type="radio" name="generateLength" value="6"><label for="r2">6桁</label>
+        <input type="radio" name="generateLength" value="8"><label for="r3">8桁</label>
+        <input type="radio" name="generateLength" value="12"><label for="r4">12桁</label>
+      </div>
+      <button id="generateButton">パスワードを生成する</button>
+    </form>
+
+    <ul class="passwordList" id="passwordList"></ul>
+  </main>
+</body>
+</html>
